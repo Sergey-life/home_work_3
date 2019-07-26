@@ -4,7 +4,7 @@
     На экран выводить результат в зависимости от значений этих переменных. Не забудьте про деление на 0, если надо - выдавать ошибку что на 0 делить нельзя.
  */
 
-    if (isset($_GET['a']) &&isset($_GET['b']) && isset($_GET['operator'])) {
+    if (isset($_GET['a']) && isset($_GET['b']) && isset($_GET['operator'])) {
         $a = filter_var($_GET['a'], FILTER_VALIDATE_FLOAT);
         $b = filter_var($_GET['b'], FILTER_VALIDATE_FLOAT);
         $operator = filter_var($_GET['operator'], FILTER_SANITIZE_STRING);
